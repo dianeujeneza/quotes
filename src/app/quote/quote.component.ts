@@ -6,6 +6,7 @@ import { Quote } from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
+
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1,'Albert Einstein','I have no special talent. I am only passionately curious.',new Date(2019,3,14)),
@@ -15,6 +16,12 @@ export class QuoteComponent implements OnInit {
 
   ];
 
+  completeQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes.splice(index,1);
+    }
+  }
+  
   deleteQuote(isComplete, index){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
