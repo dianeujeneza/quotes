@@ -37,11 +37,11 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewGoal(goal){
-    let goalLength = this.goals.length;
-    goal.id = goalLength+1;
-    goal.completeDate = new Date(goal.completeDate)
-    this.goals.push(goal)
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
   }
   constructor() { }
 
