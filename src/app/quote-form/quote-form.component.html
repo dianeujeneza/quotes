@@ -5,14 +5,14 @@
             <div class="form-group">
       
                 <label for="name">Author's Name</label>
-                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name">
-                Display {{newQuote.name}}
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel">
+                <!-- Display {{newQuote.name}} -->
       
             </div>
             <div class="form-group">
       
                 <label for="description">Quote's description</label>
-                <textarea class="form-control" id="description" rows="4" required></textarea>
+                <textarea class="form-control" id="description" rows="4" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
       
             </div>
             <div class="form-group">

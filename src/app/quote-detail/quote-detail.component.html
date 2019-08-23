@@ -1,4 +1,8 @@
-<p>{{quote.description}}</p>
+<p>{{quote.name}}</p>
 <p>This quote last for {{quote.completeDate|dateCount}} days</p>
-<button (click)= 'quoteComplete(true)'>Complete</button>
+<!-- <button (click)= 'quoteComplete(true)'>Complete</button> -->
 <button (click)= 'quoteDelete(true)'>Delete Quote</button>
+<p class="card-text">upVotes: {{upVotes}}</p>
+  <p class="card-text">downVotes: {{downVotes}}</p>
+  <button class="btn btn-outline-success" (click)="likeVote()">UpVote</button>
+  <button class="btn btn-outline-info" (click)="dislikeVote()">DownVote</button>

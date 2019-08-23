@@ -18,7 +18,7 @@ export class QuoteComponent implements OnInit {
   ];
 
   toggleDetails(index){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quotes[index].showName = !this.quotes[index].showName;
   }
 
   completeQuote(isComplete, index){
@@ -37,7 +37,7 @@ export class QuoteComponent implements OnInit {
     }
   }
 
-  addNewQuote(quote){
+  addNewQuote(quote){``
     let quoteLength = this.quotes.length;
     quote.id = quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
