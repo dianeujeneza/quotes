@@ -5,6 +5,7 @@
         <li *ngFor='let quote of quotes'>
           {{quote.name}} from {{quote.completeDate|date}}
           <app-quote-detail [quote]='quote'></app-quote-detail>
+          <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
         </li>
     </ul>
 </div>
