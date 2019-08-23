@@ -7,6 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 
+
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1,'Albert Einstein','I have no special talent. I am only passionately curious.',new Date(2019,3,14)),
@@ -15,6 +16,10 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Nelson Mandela','It always seems impossible until it’s done. ',new Date(2019,7,4)),
 
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
 
   completeQuote(isComplete, index){
     if (isComplete) {
