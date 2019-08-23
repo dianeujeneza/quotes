@@ -8,10 +8,10 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'I have no special talent. I am only passionately curious.', 'Albert Einstein'),
-    new Quote(2,'Wisely, and slow. They stumble that run fast.','William Shakespeare '),
-    new Quote(3,'The greatest wealth is to live content with little. ','Plato'),
-    new Quote(4,'It always seems impossible until it’s done. ','Nelson Mandela'),
+    new Quote(1,'Albert Einstein','I have no special talent. I am only passionately curious.',new Date(2019,3,14)),
+    new Quote(2,'William Shakespeare ','Wisely, and slow. They stumble that run fast.',new Date(2019,5,1)),
+    new Quote(3,'Plato','The greatest wealth is to live content with little. ',new Date(2019,3,24)),
+    new Quote(4,'Nelson Mandela','It always seems impossible until it’s done. ',new Date(2019,7,4)),
 
   ];
 
