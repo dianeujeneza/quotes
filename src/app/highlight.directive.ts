@@ -5,12 +5,12 @@ import { Directive ,ElementRef} from '@angular/core';
 })
 export class HighlightDirective {
 
-  constructor(private elem:ElementRef){
-    this.elem.nativeElement.style.backgroundColor='green';
+  constructor(elem:ElementRef){
+    elem.nativeElement.style.backgroundColor='green';
   }
-  private backgroundColor(action:string){
-    this.elem.nativeElement.style.backgroundColor=action;
+  // private backgroundColor(action:string){
+  //   this.elem.nativeElement.style.backgroundColor=action;
 
-  }
+  // }
 
 }

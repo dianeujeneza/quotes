@@ -10,7 +10,15 @@
         </div>
         <div *ngIf='quote.showName'>
           <app-quote-detail  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
-        </div>  
+        </div>
+        <!-- <div>
+            <p appHighlight *ngIf="highestUpvote()===quote.upVotes && quote.upVotes>0">{{quote.description}}</p>
+            <p  *ngIf="highestUpvote()!==quote.upVotes || quote.upVotes===0">{{quote.description}}</p>
+          <p class="card-text">upVotes: {{upVotes}}</p>
+      <p class="card-text">downVotes: {{downVotes}}</p>
+      <button class="btn btn-outline-success" (click)="likeVote()">UpVote</button>
+      <button class="btn btn-outline-info" (click)="dislikeVote()">DownVote</button>
+        </div>   -->
       </div>
     </div>
     <div class="col-md-6">
