@@ -5,7 +5,7 @@
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
-          <h4 id="{{i}}">{{quote.description}} from {{quote.completeDate|date}}</h4>
+          <h4 id="{{i}}">{{quote.description}} since {{quote.completeDate|date}}</h4>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Details</button>
         </div>
         <div *ngIf='quote.showName'>

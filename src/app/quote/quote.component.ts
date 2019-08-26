@@ -11,9 +11,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1,'Albert Einstein','I have no special talent. I am only passionately curious.',"Ddi",new Date(2019,3,14)),
-    new Quote(2,'William Shakespeare ','Wisely, and slow. They stumble that run fast.',"Ddi",new Date(2019,5,1)),
-    // new Quote(3,'Plato','The greatest wealth is to live content with little. ',new Date(2019,3,24)),
-    // new Quote(4,'Nelson Mandela','It always seems impossible until it’s done. ',new Date(2019,7,4)),
+    // new Quote(2,'William Shakespeare ','Wisely, and slow. They stumble that run fast.',"Ddi",new Date(2019,5,1)),
+    // new Quote(3,'Plato','The greatest wealth is to live content with little. ',"Ddi",new Date(2019,3,24)),
+    new Quote(4,'Nelson Mandela','It always seems impossible until it’s done. ',"Ddi",new Date(2019,7,4)),
 
   ];
 
